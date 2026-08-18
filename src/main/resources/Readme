@@ -1,0 +1,24 @@
+Dockerized Task Management REST API
+
+A Task Management REST API built with Java 22 and Spring Boot, backed by MySQL, and fully containerized with Docker and Docker Compose. This project was built to go beyond just writing backend code — the goal was to understand how a real, multi-container application is deployed, networked, and run in production-like conditions.
+
+Overview
+
+The API supports full CRUD operations for managing tasks, with proper request validation, DTOs for clean data transfer, and centralized exception handling. The entire application — including the database — runs in isolated Docker containers that communicate over a dedicated Docker network, with persistent storage and a MySQL health check to ensure the app only starts once the database is actually ready.
+
+Features
+CRUD operations for tasks (Create, Read, Update, Delete)
+DTOs to separate internal entities from API request/response models
+Request validation using Bean Validation
+Centralized exception handling for consistent, meaningful error responses
+Spring Data JPA / Hibernate for database access and ORM mapping
+MySQL as the persistent relational database
+Tech Stack
+Layer	Technology
+Language	Java 22
+Framework	Spring Boot
+Data Access	Spring Data JPA, Hibernate
+Database	MySQL
+Containerization	Docker
+Orchestration	Docker Compose
+API Testing	Postman
